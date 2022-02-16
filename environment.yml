@@ -1,0 +1,42 @@
+name: gspaces
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.9
+
+  # Dev (not needed to run the code)
+  - black # Code formatter
+  - flake8 # Code linter
+  - pydocstyle # Documentation linter
+  - mypy # Type checking
+  - ipykernel # IPython
+  - ipywidgets # Jupyter features for rich package
+
+  # Documentation
+  - sphinx # Building documentation
+  - sphinx-autobuild # Automatic building of docs when files changes
+  - sphinx-autoapi # Automatic creation of documentation from files
+  - sphinx-autodoc-typehints # Auto include types in the definitions
+  - sphinxcontrib-bibtex # Bibliography
+  - sphinx_rtd_theme # Sphinx theme
+
+  # Testing
+  - pytest # Testing library
+  - pytest-json-report # Testing report
+  - pytest-cov # Test coverage report
+
+  # Calculations
+  - numpy
+
+  # Configuration Management
+  - python-dotenv # .env files loading config
+
+  # PIP Dependencies:
+  - pip # To install packages not available within conda ecosystem
+  - pip:
+      # Documentation
+      - sphinx-rtd-dark-mode # Dark mode for the sphinx theme
+
+      # Install the gspaces Package
+      - -e .
