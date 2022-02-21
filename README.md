@@ -5,6 +5,8 @@
 Provides memory efficient collections for common spaces.
 Including, drop-in replacement for Numpy's arange, linspace, logspace and geomspace functions.
 
+https://pypi.org/project/gspaces/
+
 ## Installation
 
 ```console
